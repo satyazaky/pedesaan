@@ -1,0 +1,179 @@
+/* Pengaturan Umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #333;
+    background-color: #f9f6f0;
+}
+
+/* Header & Navigasi */
+header {
+    background-color: #2e5a27;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #a8df8e;
+}
+
+/* Bagian Hero */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQaO_Dmy0FyPyfVUkk35-PghACUB3uKogBg9beOJNy7TWHfxmxFsgBhcWOJlub1_omLX_otgIxl_ZVvSe8') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #388E3C;
+}
+
+/* Bagian Tentang */
+.about {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.about .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h2, .galeri h2, .kontak h2 {
+    font-size: 2.2rem;
+    color: #2e5a27;
+    margin-bottom: 20px;
+}
+
+.about p, .kontak p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Bagian Galeri */
+.galeri {
+    padding: 80px 20px;
+    background-color: #f2efe9;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.gallery-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.gallery-card h3 {
+    margin: 15px 15px 5px 15px;
+    color: #2e5a27;
+}
+
+.gallery-card p {
+    margin: 0 15px 20px 15px;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Bagian Kontak */
+.kontak {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.kontak p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #1b3817;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
